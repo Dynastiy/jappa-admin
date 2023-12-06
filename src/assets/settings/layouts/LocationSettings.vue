@@ -1,0 +1,72 @@
+<template>
+    <div>
+      <div class="d-flex">
+        <div class="w-100">
+          <h4>Countries</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, officiis
+            iure illo temporibus praesentium harum magnam iusto consectetur
+            delectus veritatis sint voluptatibus tempore consequuntur animi iste
+            enim corrupti modi rem.
+          </p>
+          <button class="button primary-btn">Add Country</button>
+        </div>
+  
+        <div class="w-100">
+          <table-component :item="items" />
+        </div>
+      </div>
+  
+      <hr>
+  
+      <div class="d-flex">
+        <div class="w-100">
+          <h4>States</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, officiis
+            iure illo temporibus praesentium harum magnam iusto consectetur
+            delectus veritatis sint voluptatibus tempore consequuntur animi iste
+            enim corrupti modi rem.
+          </p>
+          <button class="button primary-btn">Add State</button>
+        </div>
+  
+        <div class="w-100">
+          <table-component :items="items"/>
+        </div>
+      </div>
+
+      <div class="d-flex">
+        <div class="w-100">
+          <h4>Cities</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, officiis
+            iure illo temporibus praesentium harum magnam iusto consectetur
+            delectus veritatis sint voluptatibus tempore consequuntur animi iste
+            enim corrupti modi rem.
+          </p>
+          <button class="button primary-btn">Add City</button>
+        </div>
+  
+        <div class="w-100">
+          <table-component :items="items"/>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  import TableComponent from "@/components/TableComponent.vue";
+  
+  export default {
+    components: { TableComponent },
+    data(){
+      return {
+          items: []
+      }
+    }
+  };
+  </script>
+  
+  <style></style>
+  
